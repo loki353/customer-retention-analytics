@@ -681,9 +681,11 @@ elif page == "Customer Risk":
     page_header(
         "Retention attention",
         "Customer Risk Explorer",
-        "Create a transparent list of customer records that may merit review.
+        """
+Create a transparent list of customer records that may merit review.
         This is an exploratory prioritization tool, not a validated prediction
-        of who will leave."
+        of who will leave.
+"""
     )
 
     risk_df = filtered_df.copy()
