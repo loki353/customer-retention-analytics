@@ -457,7 +457,7 @@ elif page == "High-Value Customer Detector":
     balance_threshold = c1.number_input("High-balance threshold", min_value=0.0, value=round(default_balance, 2), step=5000.0)
     salary_threshold = c2.number_input("High-salary threshold", min_value=0.0, value=round(default_salary, 2), step=5000.0)
     max_products = int(max(df["NumOfProducts"].max(), 1))
-    ```python
+
 max_product_filter = c3.slider(
     "Maximum products for low product-depth flag",
     min_value=0,
