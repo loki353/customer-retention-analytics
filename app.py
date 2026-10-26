@@ -457,7 +457,14 @@ elif page == "High-Value Customer Detector":
     balance_threshold = c1.number_input("High-balance threshold", min_value=0.0, value=round(default_balance, 2), step=5000.0)
     salary_threshold = c2.number_input("High-salary threshold", min_value=0.0, value=round(default_salary, 2), step=5000.0)
     max_products = int(max(df["NumOfProducts"].max(), 1))
-    max_product_filter = c3.slider("Maximum products for low product-depth flag", min_value=0, max_value=max_product, value=min(2, max_product))
+    ```python
+max_product_filter = c3.slider(
+    "Maximum products for low product-depth flag",
+    min_value=0,
+    max_value=max_products,
+    value=min(2, max_products)
+)
+```
 
     active_filter = st.selectbox("Engagement filter", ["All", "Inactive only", "Active only"])
     churn_filter = st.selectbox("Churn status filter", ["All", "Retained only", "Churned only"])
