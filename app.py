@@ -464,7 +464,7 @@ max_product_filter = c3.slider(
     max_value=max_products,
     value=min(2, max_products)
 )
-```
+
 
     active_filter = st.selectbox("Engagement filter", ["All", "Inactive only", "Active only"])
     churn_filter = st.selectbox("Churn status filter", ["All", "Retained only", "Churned only"])
