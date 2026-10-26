@@ -263,7 +263,7 @@ if raw_df is None:
     st.markdown("""
     <div class="hero">
         <div class="eyebrow">Customer Intelligence • Retention Analytics</div>
-        <h1>BankPulse Intelligence</h1>
+        <h1> RetainIQ </h1>
         <p>
             Understand customer engagement, product adoption and churn.
             Turn banking data into clear, actionable retention strategies.
