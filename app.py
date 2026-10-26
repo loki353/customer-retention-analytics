@@ -466,10 +466,26 @@ max_product_filter = c3.slider(
 )
 
 
-    active_filter = st.selectbox("Engagement filter", ["All", "Inactive only", "Active only"])
-    churn_filter = st.selectbox("Churn status filter", ["All", "Retained only", "Churned only"])
-    geo_options = ["All"] + sorted(df["Geography"].dropna().astype(str).unique().tolist())
-    selected_geo = st.selectbox("Geography filter", geo_options)
+  
+    active_filter = st.selectbox(
+        "Engagement filter",
+        ["All", "Inactive only", "Active only"]
+    )
+
+    churn_filter = st.selectbox(
+        "Churn status filter",
+        ["All", "Retained only", "Churned only"]
+    )
+
+    geo_options = ["All"] + sorted(
+        df["Geography"].dropna().astype(str).unique().tolist()
+    )
+
+    selected_geo = st.selectbox(
+        "Geography filter",
+        geo_options
+    )
+
 
     risk = df.copy()
     risk["HighBalance"] = risk["Balance"] >= balance_threshold
