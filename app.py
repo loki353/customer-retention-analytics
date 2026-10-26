@@ -212,14 +212,14 @@ def money(value):
 
 st.sidebar.markdown("""
 <div style="padding: 18px 0 24px 0;">
-    <div style="font-size:12px; letter-spacing:2px; color:#77D7CE;">
-        BANKING ANALYTICS
+    <div style="font-size:12px; letter-spacing:2px; color:#D9D5FF;">
+        CUSTOMER INTELLIGENCE
     </div>
-    <div style="font-size:25px; font-weight:800; color:white;">
-        BankPulse
+    <div style="font-size:28px; font-weight:800; color:white;">
+        RetainIQ
     </div>
-    <div style="font-size:12px; color:#C5D2E5;">
-        Intelligence Platform
+    <div style="font-size:12px; color:#E0E3FF;">
+        Customer Retention Platform
     </div>
 </div>
 """, unsafe_allow_html=True)
